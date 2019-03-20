@@ -1,0 +1,105 @@
+* {
+  box-sizing: inherit; }
+
+body {
+  font-family: serif;
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 350px;
+  height: 570px;
+  padding: 10px;
+  margin: 30px auto 5px auto;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-image: linear-gradient(-360deg, green, #00f500);
+  box-shadow: 0rem .4rem 1rem black; }
+
+#timer-left {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 4rem; }
+
+#timer-label {
+  font-family: cursive;
+  font-size: 1.1rem; }
+
+#start_stop {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  margin: -10px auto; }
+  #start_stop .start {
+    z-index: 3; }
+  #start_stop .stop {
+    z-index: 2; }
+  #start_stop .break {
+    z-index: 1; }
+  #start_stop button {
+    border: none;
+    background-color: none;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-size: .9rem; }
+
+.break-container,
+.reset-container,
+.session-container {
+  width: 100%; }
+
+.buttons {
+  display: flex;
+  margin-top: 30px;
+  align-items: center; }
+  .buttons .fa {
+    font-size: 5.5rem;
+    line-height: .5;
+    transition: all .1s ease-in;
+    color: #434343; }
+    .buttons .fa:active {
+      transform: scale(1.2); }
+
+#reset {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  transition: transform .2s; }
+  #reset:hover, #reset:active {
+    transform: scale(1.1);
+    outline: none;
+    border: none; }
+  #reset .fa {
+    font-size: 4rem;
+    font-weight: 100;
+    color: white; }
+
+#session-label,
+#break-label {
+  position: relative; }
+  #session-label #break-length,
+  #session-label #session-length,
+  #break-label #break-length,
+  #break-label #session-length {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-top: -10px;
+    background-color: #00ae00; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>PROMODO</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container-fluid text-center">
+			<div id="timer-left">
+				<div class="zero-min">0</div>
+				<div class="min">0</div>
+				<span class="colon px-1">:</span>
+				<div class="zero-sec">0</div>
+				<div class="sec">0</div>
+			</div>
+			<p id="timer-label" class="">-----------------------</p>
+			<div id="start_stop">
+				<button class="start"> <i class="fa fa-play"></i> start</button>
+				<button class="stop"> <i class="fa fa-pause"></i> pause </button>
+				<button class="break"> <i class="fa fa-play"></i> start </button>
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="session-container">
+				<div id="session-increment">
+					<i class=" session-increment  fa fa-caret-up"></i>
+				</div>
+				<div id="session-label">
+					<button id="session-length">25</button>
+				</div>
+				<div id="session-decrement">
+					<i class="session-decrement  fa fa-caret-down"> </i>
+				</div>
+			</div>
+			<div class="reset-container">
+				<button id="reset"><i class="reset fa fa-undo"></i></button>
+			</div>
+			<div class="break-container">
+				<div id="break-increment">
+					<i class="break-increment fa fa-caret-up"></i>
+				</div>
+				<div id="break-label">
+					<button id="break-length">5</button>
+				</div>
+				<div id="break-decrement">
+					<i id="btn" class="break-decrement fa fa-caret-down"></i>
+				</div>
+			</div>
+		</div>
+		<audio src="bleep.mp3"></audio>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+
+
