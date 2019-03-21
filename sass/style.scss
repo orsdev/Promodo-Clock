@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-	width: 350px;
+	 width: 365px;
 	height: 570px;
 	padding: 10px;
 	margin: 30px auto 5px auto;
@@ -72,6 +72,7 @@ body {
 .reset-container,
 .session-container {
 	width: 100%;
+	position: relative;
 }
 
 .buttons {
@@ -132,4 +133,18 @@ body {
 		background-color: lighten(green, 9%);
 	}
 
+}
+
+.session-l {
+		position: absolute;
+		top: 70px;
+		left: -68px;
+		transform: rotate(-90deg);
+	}
+
+.break-l {
+	position: absolute;
+		top: 70px;
+		right: -65px;
+		transform: rotate(-90deg);
 }

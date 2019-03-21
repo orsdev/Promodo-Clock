@@ -6,7 +6,7 @@ body {
   box-sizing: border-box; }
 
 .wrapper {
-  width: 350px;
+  width: 365px;
   height: 570px;
   padding: 10px;
   margin: 30px auto 5px auto;
@@ -54,7 +54,8 @@ body {
 .break-container,
 .reset-container,
 .session-container {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .buttons {
   display: flex;
@@ -101,5 +102,17 @@ body {
     font-weight: 100;
     margin-top: -10px;
     background-color: #00ae00; }
+
+.session-l {
+  position: absolute;
+  top: 70px;
+  left: -68px;
+  transform: rotate(-90deg); }
+
+.break-l {
+  position: absolute;
+  top: 70px;
+  right: -65px;
+  transform: rotate(-90deg); }
 
 /*# sourceMappingURL=style.css.map */
